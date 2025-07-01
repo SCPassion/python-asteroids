@@ -22,15 +22,13 @@ Create the project's isolated environment. This typically creates a .venv direct
 uv venv
 ```
 
-## Add Dependencies:
+## Add Dependencies from old python way:
 
 Install all your project's dependencies from a requirements.txt file (or add them one by one if you prefer). This also creates a uv.lock file.
 
 ```
 uv add -r requirements.txt
 ```
-
-## Clean Up (Optional but Recommended):
 
 Once uv has everything set up, you can remove your old venv directory and requirements.txt if they existed.
 
@@ -65,15 +63,7 @@ Add New Dependencies: If your project needs new packages, use
 
 ```
 uv add.
-```
-
-```
 uv add new-package-name
-```
-
-### Install dependencies with version
-
-```
 uv add pygame==2.6.1
 ```
 
@@ -90,14 +80,6 @@ git clone your-forked-repo-url
 cd your-forked-repo-name
 ```
 
-## Install uv (if you haven't already):
-
-Make sure you have uv installed on your system. If not, you'd install it:
-
-```
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
 ## Create the Virtual Environment:
 
 uv needs to create the isolated environment where your packages will live.
@@ -108,15 +90,11 @@ uv venv
 
 This will create the .venv directory.
 
-## Install Dependencies:
-
-Now, uv can install all the dependencies based on the uv.lock file. This ensures you get the exact versions the original author used.
+## Sync Dependencies:
 
 ```
 uv sync
 ```
-
-Alternatively, you could use uv sync, which serves a similar purpose, ensuring your environment matches the lock file.
 
 ## Activate the Virtual Environment:
 
