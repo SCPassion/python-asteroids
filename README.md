@@ -2,16 +2,34 @@
 
 ## Step 1: Create a virtual environment at the top level of your project
 
-`python3 -m venv venv`
+```bash
+uv init your-project-name
+cd your-project-name
+```
 
-## Step 2: Open a virtual environment
+## Step 2: Create a virtual environment:
+```bash
+uv venv
+```
 
-`source venv/bin/activate`
+## Step 3: Open a virtual environment
+
+```bash
+source .venv/bin/activate
+```
 
 ## Step 3: import the python package
 
-`pip install -r requirements.txt`
+```bash
+uv add -r requirements.txt
+```
 
 # When on a fresh new start:
 
 `source venv/bin/activate`
+
+# Run
+
+```bash
+uv run -m pygame
+```
