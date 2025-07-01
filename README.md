@@ -22,6 +22,8 @@ source .venv/bin/activate
 
 ```bash
 uv add -r requirements.txt
+or 
+uv add pygame==2.6.1
 ```
 
 # When on a fresh new start:
