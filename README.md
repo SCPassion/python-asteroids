@@ -8,7 +8,7 @@ Navigate to your project directory and run uv init. This sets up basic configura
 
 ## Create Virtual Environment: 
 Create the project's isolated environment. This typically creates a .venv directory.
-`uv venv`
+```uv venv```
 
 ## Add Dependencies: 
 Install all your project's dependencies from a requirements.txt file (or add them one by one if you prefer). This also creates a uv.lock file.
