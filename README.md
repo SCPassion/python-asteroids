@@ -51,6 +51,11 @@ uv add.
 ```
 uv add new-package-name
 ```
+### Install dependencies with version
+```
+uv add pygame==2.6.1
+```
+This tells Python that this project requires pygame version 2.6.1.
 
 # Fork it
 ## Clone Your Fork: 
